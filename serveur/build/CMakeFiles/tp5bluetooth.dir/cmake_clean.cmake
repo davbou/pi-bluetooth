@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tp5bluetooth.dir/Bluetooth_Server.c.o"
-  "tp5bluetooth.pdb"
   "tp5bluetooth"
+  "tp5bluetooth.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

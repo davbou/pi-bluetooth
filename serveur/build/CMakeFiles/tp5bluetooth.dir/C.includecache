@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/setr-tp5/serveur/Bluetooth_Server.c
+netinet/in.h
+-
+arpa/inet.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+unistd.h
+-
+bluetooth/bluetooth.h
+-
+bluetooth/rfcomm.h
+-
+

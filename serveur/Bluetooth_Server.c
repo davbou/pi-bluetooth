@@ -3,6 +3,8 @@
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/rfcomm.h>
@@ -11,7 +13,8 @@
 
 int main(void)
 {
-    int sock, client, alen,connection,bytes_read;
+    int sock, client, connection, bytes_read;
+    size_t alen;
     struct sockaddr_rc addr;
     char buf[1024] = { 0 };
 

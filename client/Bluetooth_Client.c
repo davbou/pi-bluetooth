@@ -3,10 +3,12 @@
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-
+#include <unistd.h>
+#include <stdlib.h>
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/rfcomm.h>
 #include <bluetooth/hci.h>
+#include <bluetooth/hci_lib.h>
 
 unsigned char* received_data;
 int connection;

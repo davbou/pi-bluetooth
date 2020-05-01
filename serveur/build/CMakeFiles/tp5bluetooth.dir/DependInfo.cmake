@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/setr/projets/pi-bluetooth/serveur/Bluetooth_Server.c" "/home/setr/projets/pi-bluetooth/serveur/build/CMakeFiles/tp5bluetooth.dir/Bluetooth_Server.c.o"
+  "/home/david/setr-tp5/serveur/Bluetooth_Server.c" "/home/david/setr-tp5/serveur/build/CMakeFiles/tp5bluetooth.dir/Bluetooth_Server.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

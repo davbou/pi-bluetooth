@@ -1,4 +1,4 @@
-# Install script for directory: /home/setr/projets/pi-bluetooth/serveur
+# Install script for directory: /home/david/setr-tp5/serveur
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/setr/projets/pi-bluetooth/serveur/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/david/setr-tp5/serveur/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
