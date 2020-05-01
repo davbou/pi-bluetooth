@@ -1,0 +1,3 @@
+/home/setr/projets/pi-bluetooth/serveur/build/CMakeFiles/rebuild_cache.dir
+/home/setr/projets/pi-bluetooth/serveur/build/CMakeFiles/tp5bluetooth.dir
+/home/setr/projets/pi-bluetooth/serveur/build/CMakeFiles/edit_cache.dir
