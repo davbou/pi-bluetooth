@@ -5,11 +5,27 @@
 #include <sys/socket.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <linux/input.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/rfcomm.h>
 
 #define CHANNEL 4
+
+int open_input_file(){
+    int file;
+
+	if ((file = open("/dev/input/event0", O_RDONLY)) < 0)		
+	{
+		perror("KeyboardMonitor can't open input device");
+		close(file);
+		exit(1);
+	}
+
+    return file;
+}
 
 int main(void)
 {
@@ -17,6 +33,10 @@ int main(void)
     size_t alen;
     struct sockaddr_rc addr;
     char buf[1024] = { 0 };
+    int bytes_read_from_keyboard = 0;
+    int keyboard_file = open_input_file();
+	struct input_event InputEvent[64];
+
 
     if( (sock = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM)) < 0)
     {
@@ -43,11 +63,14 @@ int main(void)
 
     connection = 1;
 
+    
+
     while(connection){
 
-        bytes_read = read(client, buf, sizeof(buf));
+        bytes_read = read(keyboard_file, InputEvent, sizeof(InputEvent));
         if( bytes_read > 0 ) {
-            printf("received [%s]\n", buf);
+            send(client ,(char*) InputEvent ,bytes_read,0);
+            printf("sending %i bytes\n", bytes_read);
         }
     }
     close(client);
