@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/david/setr-tp5/client/build",
+  "command": "/usr/bin/cc   -g   -Wall -Wextra -Wpedantic -Wduplicated-cond -Wlogical-op -Wnull-dereference -Wjump-misses-init -Wshadow -fno-omit-frame-pointer -o CMakeFiles/tp5bluetooth.dir/Bluetooth_Client.c.o   -c /home/david/setr-tp5/client/Bluetooth_Client.c",
+  "file": "/home/david/setr-tp5/client/Bluetooth_Client.c"
+}
+]

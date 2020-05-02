@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "requete.h": "c",
+        "telechargeur.h": "c",
+        "inet.h": "c"
+    }
+}

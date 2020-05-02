@@ -1,0 +1,3 @@
+/home/david/setr-tp5/serveur/build/CMakeFiles/rebuild_cache.dir
+/home/david/setr-tp5/serveur/build/CMakeFiles/tp5bluetooth.dir
+/home/david/setr-tp5/serveur/build/CMakeFiles/edit_cache.dir
